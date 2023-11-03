@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    position: relative;
+    overflow: hidden;
+}
+.video-slide{
+z-index: 000;
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+
+}
+#page{
+    position: relative;
+    /* height: 100vh;
+    width: 100vw; */
+    /* background-color: #f1f1f1; */
+    height: 100vh;
+    width:100%;
+    background: linear-gradient(45deg,#d2001a,#7462ff,#f48e21,#23d5ab);
+    background-size: 300% 300%;
+    animation:color 12s ease-in-out infinite;
+}
+@keyframes color{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+#page1{
+    position: relative;
+    /* height: 100vh;
+    width: 100vw;
+    background-color: #f1f1f1; */
+    height: 100vh;
+    width:100%;
+    background: linear-gradient(45deg,#d2001a,#7462ff,#f48e21,#23d5ab);
+    background-size: 300% 300%;
+    animation:color 12s ease-in-out infinite;
+}
+@keyframes color{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+#page2{
+    position: relative;
+    /* height: 100vh;
+    width: 100vw;
+    background-color: #f1f1f1; */
+    height: 100vh;
+    width:100%;
+    background: linear-gradient(45deg,#d2001a,#7462ff,#f48e21,#23d5ab);
+    background-size: 300% 300%;
+    animation:color 12s ease-in-out infinite;
+}
+@keyframes color{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+#page3{
+    position: relative;
+    /* height: 100vh;
+    width: 100vw;
+    background-color: #f1f1f1; */
+    height: 100vh;
+    width:100%;
+    background: linear-gradient(45deg,#d2001a,#7462ff,#f48e21,#23d5ab);
+    background-size: 300% 300%;
+    animation:color 12s ease-in-out infinite;
+}
+@keyframes color{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+/* #page4{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #f1f1f1;
+} */
+canvas{
+    position: relative;
+    z-index: 9;
+    max-width: 100vw;
+    max-height: 100vh;
+}
+#loop{
+    display: flex;
+    position: absolute;
+    top: 30%;
+    height: 25%;
+    width: 100%;
+    font-size: 120px;
+    white-space: nowrap;
+    font-family: gilroy;
+}
+#loop>h1{
+    background-image:url(https://as2.ftcdn.net/v2/jpg/05/98/70/91/1000_F_598709102_ZTyzS7GLhN24xVqcl6BMklnqU3XLaymf.jpg);
+    background-size:cover;
+    background-position: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color:transparent;
+    -webkit-text-stroke: 1.2px #000;
+    /* font-weight: 500; */
+    font-weight: 400;
+    animation-name: anim;
+    animation-duration: 25s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+#loop>h1>span{
+    background-image:url(https://miro.medium.com/v2/resize:fit:1400/1*f6Epn9tpkJj2ePPJHcoNww.jpeg);
+    background-size:cover;
+    background-position: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color:transparent;
+    -webkit-text-stroke: 1.2px #000;
+    font-weight: 500;
+    /* -webkit-text-stroke: 1.2px #000; */
+}
+@keyframes anim{
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+#nav{
+    top:1%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    height: 7%;
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+    padding: 0px 30px;
+}
+#nav>h3{
+    font-family: gilroy;
+    font-weight: 400;
+    font-size: 22px;
+}
+#nav>button{
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+}
+#page>h3{
+    position: absolute;
+    top: 60%;
+    font-family: jokerman;
+    font-weight: 400;
+    /* color:#7D0633; */
+    /* color: cyan; */
+    right: 0%;
+    font-size: 25px;
+}
+#page>h4{
+    position: absolute;
+    top: 60%;
+    left: 0%;
+    font-size: 25px;
+    /* color: cyan; */
+    font-family:jokerman;
+    font-weight: 400;
+}
+#page>h5{
+    position: absolute;
+    top: 80%;
+    left: 1%;
+    font-size: 25px;
+    /* color: cyan; */
+    font-family:jokerman;
+    font-weight: 400;
+}
+#page>h6{
+    position: absolute;
+    top: 80%;
+    right: 1%;
+    font-size: 25px;
+    /* color: cyan; */
+    font-family:jokerman;
+    font-weight: 400;
+}
+#page1>#right-text{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+#page1>#right-text>h3{
+    font-family: jokerman;
+    font-size: 25px;
+    font-weight: 400;
+    color: linear-gradient(#191970,rgb(25, 25, 112));
+
+}
+#page1>#right-text>h1{
+    font-family: algerian;
+    line-height: 1.5;
+    font-size: 60px;
+}
+#page1>#left-text{
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    text-align: end;
+}
+#page1>#left-text>h1{
+    font-family: algerian;
+    font-size: 50px;
+    line-height: 1.5;
+}
+#page1>#left-text>h3{
+    font-family: jokerman;
+    font-size: 25px;
+    font-weight: 400;
+    color: linear-gradient(#191970,rgb(25, 25, 112));
+    }
+#page2>#text1{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+#page2>#text1>h3{
+    font-family: jokerman;
+    font-size: 25px;
+    color: linear-gradient(#191970,rgb(25, 25, 112));
+    font-weight: 400;
+}
+#page2>#text1>h1{
+    font-family: algerian;
+    font-size: 60px;
+    line-height: 1.5;
+}
+#page2>#text2{
+    position: absolute;
+    top: 55%;
+    right: 3%;
+    text-align: end;
+}
+#page2>#text2>p{
+    font-family: algerian;
+    font-size: 30px;
+    font-weight: 600;
+}
+#page2>#text2>h1{
+    font-family: jokerman;
+    font-size: 25px;
+    color: linear-gradient(#191970,rgb(25, 25, 112));
+    font-weight: 400;
+}
+#page3>#text3{
+    position: absolute;
+    top: 40%;
+    right: 3%;
+    text-align: end;
+}
+#page3>#text3>h3{
+    font-family: jokerman;
+    font-size: 25px;
+    color: linear-gradient(#191970,rgb(25, 25, 112));
+    font-weight: 400;
+}
+#page3>#text3>h1{
+    font-family: algerian;
+    font-size: 70px;
+
+}
+#page3>#text4{
+    position: absolute;
+    top: 40%;
+    left: 2%;
+    text-align: end;
+}
+#page3>#text4>h2{
+    font-family:jokerman;
+    font-size: 25px;
+    color: linear-gradient(#191970,rgb(25, 25, 112));
+    font-weight: 400;
+}
+#page3>#text4>h4{
+    font-family: algerian;
+    font-size: 70px;
+}
